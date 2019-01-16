@@ -14,6 +14,7 @@ $ sudo make install #Optional, executable is inside src subdirecotry. Use su -c 
 ```
 
 And tested like so:
+
 *Shell 1*
 ```bash
 $ mkfifo ~/fifo #Create a FIFO in home directory with name fifo
@@ -25,19 +26,25 @@ $ virtualScreenGtk -f ~/fifo -x 640 -y 480 -p 25 -m RGB_4_4_4
 $ cat /dev/urandom > ~/fifo
 ```
 
+
 You should see something like:
+
 ![VirtualScreenGTK random data test](https://github.com/abbati-simone/VirtualScreenGTK/blob/master/doc/images/Screenshot_1.png "VirtualScreenGTK random data test")
 
 The refresh button on the top is used to force window update with the data acquired. This is not useful when feeding data from /dev/urandom device, because it is fast.
 For example the following screenshot show partial frame data generated from the Icarus Verilog Compiler (see linked project above).
+
 ![VirtualScreenGTK partial frame](https://github.com/abbati-simone/VirtualScreenGTK/blob/master/doc/images/Screenshot_2.png "VirtualScreenGTK partial frame")
 
 A trace line is visible on the screenshot above and is useful when a manual refresh is done and a previous frame is already on background.
 The following screenshot shows exactly this:
+
 ![VirtualScreenGTK partial frame 2](https://github.com/abbati-simone/VirtualScreenGTK/blob/master/doc/images/Screenshot_3.png "VirtualScreenGTK partial frame 2")
+
 You can see the refresh line on the top.
 
 The following one is a frame screenshot captured via the specific command line option:
+
 ![VirtualScreenGTK screenshot via option](https://github.com/abbati-simone/VirtualScreenGTK/blob/master/doc/images/Screenshot_4.jpg "VirtualScreenGTK screenshot via option")
 
 Parameters
