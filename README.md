@@ -61,5 +61,5 @@ Parameters
 Problems and future development
 -------------------------------
 I read FIFO in a non-blocking way. A better implementation should use of *poll*/*select*.
-I did tested only a few color sequences (*-m* parameter) without any problem, further testing is needed to say it works well.
+I tested only a few color sequences (*-m* parameter) without any problem, further testing is needed to say it works well.
 
